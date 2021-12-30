@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Verificationcode">
+        <attr name="code_text_color" format="color" />//验证码字体颜色
+        <attr name="code_text_size" format="dimension" />//验证码字体大小
+        <attr name="code_number" format="integer" />//验证码数量 4位  6位
+        <attr name="line_color_default" format="color" />//验证码下面线的默认颜色
+        <attr name="line_color_focus" format="color" />//验证码下面线选中后的颜色
+    </declare-styleable>
+
+</resources>
