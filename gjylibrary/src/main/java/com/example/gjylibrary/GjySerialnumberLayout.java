@@ -1,6 +1,4 @@
 package com.example.gjylibrary;
-
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.Editable;
@@ -14,27 +12,24 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
-
-
-public class SerialnumberLayout extends RelativeLayout {
+public class GjySerialnumberLayout extends RelativeLayout {
     private Context context;
     List<MyEditText> editViews;
     private int textColor;
     private int codeNumber;
     private LinearLayout ll_content;
 
-    public SerialnumberLayout(Context context) {
+    public GjySerialnumberLayout(Context context) {
         this(context, null);
     }
 
-    public SerialnumberLayout(Context context, AttributeSet attrs) {
+    public GjySerialnumberLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public SerialnumberLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public GjySerialnumberLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.context = context;
         loadView(attrs);
@@ -104,7 +99,8 @@ public class SerialnumberLayout extends RelativeLayout {
                                     for (int i = 0; i < codeNumber; i++) {
                                         content += editViews.get(i).getText();
                                     }
-                                    onInputListener.onSucess(content);
+                                    if(onInputListener!=null)
+                                        onInputListener.onSucess(content);
                                 }
                             }
                         }else{

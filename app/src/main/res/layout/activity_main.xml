@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <com.example.codedemo.SerialnumberLayout
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <com.example.gjylibrary.GjySerialnumberLayout
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/verification_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="83dp"
-        app:code_number="28"/>
+        app:code_number="9"/>
 </LinearLayout>
