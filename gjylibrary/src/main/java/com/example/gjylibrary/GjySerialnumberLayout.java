@@ -3,6 +3,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.Editable;
 import android.text.InputFilter;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
@@ -153,6 +154,7 @@ public class GjySerialnumberLayout extends RelativeLayout {
                 } else
                     linearLayout1.addView(item_view, layout_param);
             }
+            code_child.setInputType(InputType.TYPE_CLASS_NUMBER);
             editViews.add(code_child);
         }
         if(codeNumber<=8){
